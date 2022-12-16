@@ -1,6 +1,16 @@
 <!DOCTYPE html>
     <html lang="en">
     <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-982K5SNLLS">
+        </script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-982K5SNLLS');
+        </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="MAIN.png" />
@@ -14,6 +24,7 @@
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/preloader.css">
 
         <title>Jatin's portfolio</title>
     </head>
@@ -69,9 +80,19 @@
         </header>
 
         <!--==================== MAIN ====================-->
+        <div id="home">
+        <section class="center">
+            <div id="particles-js"></div>
+        </section>
+        </div>
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
+                <div id="home">
+                    <section class="center">
+                        <div id="particles-js"></div>
+                    </section>
+                    </div>
                 <div class="home__container container grid">
                     <div class="home__content grid">
                         <div class="home__social">
@@ -600,6 +621,10 @@
             </div>
 
         </section>
+        <div class="chat-bot request-loader">
+            <a href="#" class="" onclick="collectchat.open()">
+            </a>
+        </div>
     </main>
 
     <!--==================== FOOTER ====================-->
@@ -655,5 +680,11 @@
 
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
+    <script src="assets/js/particle.js"></script>
+    <script>(function(w, d) { w.CollectId = "638648fc4640ebe0301db33f"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
 </body>
 </html>
